@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="photo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password genrater | sujan thapa</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <header class="head1">
+            <img src="profile.jpg" alt="" srcset="">
+            <p> IDKCONUNDRUM_</p>
+            <a href="#about-me">about me</a>
+        </header>
+
+        <div class="PasswordgenraterBox">
+            <div class="para-line">
+                <p>PASSWORD GENERATOR</p>
+
+            </div>
+
+            <div class="container">
+
+                <input type="text" class="Password" id="Password">
+                <button class="copy" onclick="copyPassword() ">
+                    <img src="copy.png" alt="" class="copy-img">
+
+                </button>
+            </div>
+
+
+            <!-- check box container -->
+            <div class="options">
+                <label>
+                    <input type="checkbox" id="includeNumbers" checked>
+                    Numbers
+                </label>
+                <label>
+                    <input type="checkbox" id="includeSymbols" checked>
+                    Symbols
+                </label>
+                <label>
+                    <input type="checkbox" id="includeUppercase" checked>
+                    Uppercase
+                </label>
+            </div>
+
+
+
+            <!-- this genrate button -->
+            <button type="button" class="button" onclick="generatePassword()">
+                <img src="flash.png" alt="">
+              Generate
+            </button>
+
+            <div class="alert-container" id="alertContainer"></div>
+        </div>
+
+        <section>
+            <div class="slider-container">
+                <div class="slider-wrapper" id="slider">
+
+
+                    <!-- instagram -->
+                    <div class="slider-card">
+                        <img class="logo" src="instagram.png" alt="">
+                        <a href="https://www.instagram.com/idkconundrum_/">Instagram </a>
+                    </div>
+
+                    <!-- gitHUb -->
+                    <div class="slider-card"><img src="github.png" alt="" srcset="" class="logo">
+                        <a href="https://github.com/Sujanthapast0">GitHub</a>
+                    </div>
+
+                    <!-- youtube -->
+                    <div class="slider-card"><img src="youtube.png" alt="" srcset="" class="logo">
+                        <a href="https://youtube.com/@sujanthapa-ih1fl">YouTube</a>
+                    </div>
+
+                    <!-- spotify-->
+                    <div class="slider-card">
+                        <img src="pngegg.png" alt="" srcset="" class="logo">
+                        <a href="https://open.spotify.com/user/rgwfr9glols5ew1tdqkngs12x?si=27a48707609b4053">spotify</a>
+                    </div>
+
+
+                    <!-- Repeat the same cards for infinite loop -->
+
+                    <!-- instagram -->
+                    <div class="slider-card"><img src="instagram.png" alt="" srcset="" class="logo">
+                        <a href="https://www.instagram.com/idkconundrum_/">follow</a>
+                    </div>
+
+                    <!-- gitHUb -->
+                    <div class="slider-card"><img src="github.png" alt="" srcset="" class="logo">
+                        <a href="https://github.com/Sujanthapast0"> chack out</a>
+                    </div>
+
+
+                    <!-- youtube -->
+                    <div class="slider-card"><img src="youtube.png" alt="" srcset="" class="logo">
+                        <a href="https://youtube.com/@sujanthap">subscribe</a>
+                    </div>
+
+                    <!-- sound-cloud -->
+                    <div class="slider-card"><img src="pngegg.png" alt="" srcset="" class="logo">
+                        <a href="https://soundcloud.com/sujan-thapa-489154801">follow</a>
+                    </div>
+
+
+                </div>
+
+                <!-- Slider navigation buttons -->
+                <div class="slider-buttons">
+                    <button onclick="prevSlide()">
+                        < </button>
+                            <button onclick="nextSlide()">></button>
+                </div>
+
+        </section>
+
+        <header class="head2">
+            <h1>ABOUT ME</h1>
+        </header>
+
+
+        <article>
+
+            <div class="about-me" id="about-me">
+
+
+
+                <div class="profile-me">
+
+                    <img src="sujan.jpg" alt="">
+                </div>
+
+                <div class="para-me">
+                    <p>
+
+                       
+
+                        I am an enthusiastic undergraduate student aspiring to become a skilled software developer. My
+                        passion lies in Full Stack Development, and I am currently learning and exploring various
+                        programming languages and frameworks. Although I'm still a beginner in music production, I find
+                        it to be a delightful creative outlet. Recently, I developed a Password Generator Web App using
+                        HTML, CSS, and JavaScript, showcasing my growing skills as a developer. I am dedicated to
+                        continuous learning and excited about the endless possibilities that software development
+                        offers. Join me as I embark on this journey to become a proficient software developer.
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </article>
+        <footer>
+            Copyright © 2023 All Rights Reserved
+        </footer>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
