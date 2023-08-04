@@ -1,534 +1,478 @@
 /* font-family */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 
 html {
-
-    --color: #3b4346;
-
+  --color: #3b4346;
 }
 
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
-    ;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 .main {
-
-    /* border: 2px solid black; */
-    height: 162vh;
-    overflow-x: hidden;
-    /* display: flex;
+  /* border: 2px solid black; */
+  height: 162vh;
+  overflow-x: hidden;
+  /* display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; */
-    background-image: url(fotor-ai-2023080114365_1.jpg)
+  background-image: url(fotor-ai-2023080114365_1.jpg);
 }
 
-
 .head1 {
-    background-color: rgba(0, 0, 0, 0.263);
-    height: 60px;
-    display: flex;
-    align-items: center;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    padding: 0px 10px 0px 10px;
+  background-color: rgba(0, 0, 0, 0.263);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  padding: 0px 10px 0px 10px;
 }
 
 .head1 p {
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    font-weight: 700;
-    color: white;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 700;
+  color: white;
 }
 
 /* this is header img */
 .head1 img {
-    height: 50px;
-    border-radius: 99px;
-    margin: 5px;
-
+  height: 50px;
+  border-radius: 99px;
+  margin: 5px;
+  transition: all ease 300ms;
 }
 
-
-
-
-
+.head1 img:active {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
 
 /* this is the para line under main container */
 .para-line p {
-    margin-bottom: 20px;
-    color: black;
-    font-size: 22px;
-    font-weight: bolder;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 .para-line::after {
-    content: "";
-    height: 2px;
-    width: 110px;
-    background-color: black;
-    position: absolute;
-    transform: translateY(-20px) translateX(120px);
+  content: "";
+  height: 2px;
+  width: 110px;
+  background-color: black;
+  position: absolute;
+  transform: translateY(-20px) translateX(120px);
 }
 
-
 .head1 a {
-    width: 6%;
-    text-decoration: none;
-    color: rgb(128, 128, 128);
-    font-size: 15px;
-    transition: all ease 300ms;
+  width: 6%;
+  text-decoration: none;
+  color: rgb(128, 128, 128);
+  font-size: 15px;
+  transition: all ease 300ms;
 }
 
 .head1 a:hover {
-    color: rgb(185, 182, 182);
-
+  color: rgb(185, 182, 182);
 }
 
 /* this is paswordbox style code */
 .PasswordgenraterBox {
-    /* background-color: rgba(255, 255, 255, 0.301); */
-    object-fit: cover;
-    /* border: black 2px solid; */
-    display: flex;
-    justify-content: center;
-    height: 450px;
-    align-items: center;
-    flex-direction: column;
+  /* background-color: rgba(255, 255, 255, 0.301); */
+  object-fit: cover;
+  /* border: black 2px solid; */
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* this is the container that contain passinput and genrater button */
 .container {
-    background-color: #73737192;
-    border-radius: 3px;
-    height: 50px;
-    width: 350px;
-    padding: 0px 10px 0px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #73737192;
+  border-radius: 3px;
+  height: 50px;
+  width: 350px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-
 
 /* this is container input */
 .container input {
-    height: 40px;
-    width: 90%;
-    outline: none;
-    font-size: 17px;
-    border-radius: 2px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.642);
+  height: 40px;
+  width: 90%;
+  outline: none;
+  font-size: 17px;
+  border-radius: 2px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.642);
 }
-
 
 /* this is copy button img */
 .container img {
-    height: 20px;
+  height: 20px;
 }
-
 
 /* this is copy button */
 .copy {
-    background: transparent;
-    border: none;
-    /* height: 100%; */
+  background: transparent;
+  border: none;
+  /* height: 100%; */
 }
 
 /* this is genrater button */
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 100px;
-    margin-top: 20px;
-    background-color: #e5eaf5;
-    border: none;
-    border-radius: 99px;
-    transition: all ease 300ms;
-    /* font-weight: bold; */
-    padding: 0% 5px 0% 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100px;
+  margin-top: 20px;
+  background-color: #e5eaf5;
+  border: none;
+  border-radius: 99px;
+  transition: all ease 300ms;
+  /* font-weight: bold; */
+  padding: 0% 5px 0% 5px;
 }
 
 .button:hover {
-    background-color: #73737192;
-    color: white;
+  background-color: #73737192;
+  color: white;
 }
 
 .button:active {
-    transform: scale(0.9);
-
+  transform: scale(0.9);
 }
 
 /* this is gentrater button img */
-.button>img {
-    height: 30px;
-
+.button > img {
+  height: 30px;
 }
-
-
 
 /* options container */
 .options {
-    margin-top: 20px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
 
 .options label {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .options input {
-    scale: 1.5;
+  scale: 1.5;
 }
-
 
 /* alert container */
 
 .alert-container {
-    position: absolute;
-    bottom: 225px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    display: none;
-    /* Add additional styling for stickiness to the bottom */
-    z-index: 999;
-    /* To ensure it appears above other elements */
-    width: max-content;
-    white-space: nowrap;
+  position: absolute;
+  bottom: 225px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  display: none;
+  /* Add additional styling for stickiness to the bottom */
+  z-index: 999;
+  /* To ensure it appears above other elements */
+  width: max-content;
+  white-space: nowrap;
 }
 
 .copy-alert {
-    background-color: #dff0d8;
+  background-color: #dff0d8;
 }
-
 
 /* card slider */
 
-
 .slider-container {
-    width: 100%;
-    overflow: hidden;
-    margin: auto;
-    max-width: 590px;
-
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  max-width: 590px;
 }
 
 .slider-wrapper {
-    display: flex;
-    transition: transform 0.3s ease;
-    will-change: transform;
+  display: flex;
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
 .slider-card {
-    flex: 0 0 calc(100% / 5);
-    /* Each card occupies 20% of the container */
-    padding: 20px;
-    text-align: center;
-    background-color: #f0f0f07e;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(100% / 5);
+  /* Each card occupies 20% of the container */
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f07e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-    margin: 0 21px;
-    border-radius: 10px;
-    min-width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
+  margin: 0 21px;
+  border-radius: 10px;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 
 /* Styles for the slider navigation buttons */
 .slider-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .slider-buttons button {
-    margin: 0 5px;
-    padding: 5px 10px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .logo {
-    height: 40px;
+  height: 40px;
 }
 
 .slider-card a {
-    text-decoration: none;
-    margin-left: 10px;
-    color: #007bff;
+  text-decoration: none;
+  margin-left: 10px;
+  color: #007bff;
 }
 
 .slider-card {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    transition: all ease 300ms;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: all ease 300ms;
 }
 
 .slider-card:hover {
-    background-color: #f0f0f030;
-
+  background-color: #f0f0f030;
 }
 
 .slider-card img {
-    aspect-ratio: 3/2;
-    object-fit: contain;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
-
 
 /* about me */
 
-
-
-
 .about-me img {
-    height: 200px;
-    border-radius: 99px;
-    /* margin: 20px 0px 0px 40px; */
-    float: left;
+  height: 200px;
+  border-radius: 99px;
+  /* margin: 20px 0px 0px 40px; */
+  float: left;
 }
 
 .head2 h1 {
-    text-align: center;
-    margin-top: 30px;
-    color: rgba(3, 101, 214, 0.478);
-    cursor: pointer;
-    transition: all ease 300ms;
+  text-align: center;
+  margin-top: 30px;
+  color: rgba(3, 101, 214, 0.478);
+  cursor: pointer;
+  transition: all ease 300ms;
 }
 
 .head2 h1:hover {
-    color: rgb(3, 101, 214);
+  color: rgb(3, 101, 214);
 }
 
 .head2 h1::after {
-    content: "";
-    height: 2px;
-    width: 80px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    transform: translateY(20px) translateX(10px);
+  content: "";
+  height: 2px;
+  width: 80px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transform: translateY(20px) translateX(10px);
 }
 
 .head2 h1::before {
-    content: "";
-    height: 2px;
-    width: 80px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    transform: translateY(20px) translateX(-90px);
+  content: "";
+  height: 2px;
+  width: 80px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transform: translateY(20px) translateX(-90px);
 }
 
 .about-me {
-    margin-top: 20px;
-    height: 350px;
+  margin-top: 20px;
+  height: 350px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.37);
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.37);
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
 }
 
 .para-me {
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    background-color: rgba(184, 223, 159, 0.471);
-    margin: 20px;
-    border-radius: 10px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  background-color: rgba(184, 223, 159, 0.471);
+  margin: 20px;
+  border-radius: 10px;
 }
 
 .para-me p {
-    padding: 20px;
-    margin: 20px;
-
+  padding: 20px;
+  margin: 20px;
 }
 
 .profile-me img {
-    margin-left: 20px;
-    border: 1px black solid;
+  margin-left: 20px;
+  border: 1px black solid;
 }
 
 footer {
-    margin-top: 63px;
-    text-align: center;
-    color: white;
-    background-color: #73737113;
+  margin-top: 63px;
+  text-align: center;
+  color: white;
+  background-color: #73737113;
 }
-
-
-
 
 /* responsiveness */
 
-@media (max-width: 1236px) and (min-width:768px) {
-
-    .head1 a {
-        font-size: 12px;
-        width: 8%;
-        font-size: 15px;
-        ;
-    }
+@media (max-width: 1236px) and (min-width: 768px) {
+  .head1 a {
+    font-size: 12px;
+    width: 8%;
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 768px) {
+  /* Styles for devices with a screen width of 768px or less */
+  .main {
+    height: auto;
+  }
 
-    /* Styles for devices with a screen width of 768px or less */
-    .main {
-        height: auto;
-    }
+  .head1 img {
+    height: 30px;
+  }
 
-    .head1 img {
-        height: 30px;
-    }
+  .head1 p {
+    font-size: 18px;
+  }
 
-    .head1 p {
-        font-size: 18px;
+  .head1 a {
+    font-size: 12px;
+    width: 18%;
+  }
 
-    }
+  /* PasswordgenraterBox */
+  .PasswordgenraterBox {
+    height: 440px;
+  }
 
-    .head1 a {
-        font-size: 12px;
-        width: 18%;
-    }
+  .container {
+    width: 90%;
+  }
 
-    /* PasswordgenraterBox */
-    .PasswordgenraterBox {
-        height: 440px;
-    }
+  .button {
+    width: 100px;
+    font-size: 14px;
+  }
 
-    .container {
-        width: 90%;
-    }
+  /* Slider */
+  .slider-wrapper {
+    margin: auto;
+  }
 
-    .button {
-        width: 100px;
-        font-size: 14px;
-    }
+  .slider-card {
+    flex: 0 0 calc(100% / 8);
+    min-width: 251px;
+  }
 
-    /* Slider */
-    .slider-wrapper {
-        margin: auto;
-    }
+  /* About Me */
+  .about-me {
+    flex-direction: column;
+    height: auto;
 
-    .slider-card {
-        flex: 0 0 calc(100% / 8);
-        min-width: 251px;
-    }
+    margin-top: 32px;
+  }
 
-    /* About Me */
-    .about-me {
-        flex-direction: column;
-        height: auto;
+  .about-me img {
+    margin-top: 10px;
+    float: none;
+    margin-left: 0;
+    /* margin-bottom: 20px; */
+  }
 
-        margin-top: 32px;
-    }
+  .para-me p {
+    margin: 0%;
+  }
 
-    .about-me img {
-        margin-top: 10px;
-        float: none;
-        margin-left: 0;
-        /* margin-bottom: 20px; */
-    }
+  footer {
+    margin: 0%;
+  }
 
-    .para-me p {
-        margin: 0%;
-    }
-
-    footer {
-        margin: 0%;
-    }
-
-
-
-    .head2 h1 {
-
-        margin-top: 32px;
-
-    }
-
+  .head2 h1 {
+    margin-top: 32px;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 415px) {
+  /* Hide horizontal overflow */
+  main {
+    overflow-x: hidden;
+  }
 
-    /* Hide horizontal overflow */
-    main {
-        overflow-x: hidden;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
-    body {
-        overflow-x: hidden;
+  .head1 p {
+    font-size: 16px;
+  }
 
-    }
+  .PasswordgenraterBox {
+    width: 100%;
+  }
 
-    .head1 p {
-        font-size: 16px;
-    }
+  .slider-wrapper {
+    margin: 0 -10px;
+  }
 
+  .head2 h1 {
+    margin-top: 52px;
+  }
 
+  .head1 a {
+    font-size: 12px;
+    width: 25%;
+  }
 
-    .PasswordgenraterBox {
-        width: 100%;
-    }
+  /* About Me */
+  .about-me {
+    flex-direction: column;
+    height: auto;
+  }
 
-    .slider-wrapper {
-        margin: 0 -10px;
-    }
+  .about-me img {
+    height: 150px;
+  }
 
+  .slider-card {
+    min-width: 158px;
+    margin: 0px 18px;
+  }
 
-    .head2 h1 {
-        margin-top: 52px;
-    }
-
-
-
-    .head1 a {
-        font-size: 12px;
-        width: 25%;
-    }
-
-    /* About Me */
-    .about-me {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .about-me img {
-        height: 150px;
-    }
-
-    .slider-card {
-        min-width: 158px;
-        margin: 0px 18px;
-    }
-
-
-    .slider-buttons button {
-        padding: 5px 19px;
-    }
+  .slider-buttons button {
+    padding: 5px 19px;
+  }
 }
