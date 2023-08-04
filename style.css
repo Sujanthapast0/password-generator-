@@ -523,7 +523,8 @@ footer {
     }
 
     .slider-card {
-        min-width: 163px;
+        min-width: 158px;
+        margin: 0px 18px;
     }
 
 
