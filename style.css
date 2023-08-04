@@ -49,7 +49,7 @@ html {
 }
 
 .head1 img:active {
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
 /* this is the para line under main container */
@@ -296,7 +296,7 @@ html {
   content: "";
   height: 2px;
   width: 80px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   position: absolute;
   transform: translateY(20px) translateX(10px);
 }
@@ -305,7 +305,7 @@ html {
   content: "";
   height: 2px;
   width: 80px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   position: absolute;
   transform: translateY(20px) translateX(-90px);
 }
@@ -317,15 +317,17 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.37);
+  background-color: rgba(0, 0, 0, 0.37);
   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
 }
 
 .para-me {
   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-  background-color: rgba(184, 223, 159, 0.471);
+  background-color: rgb(255, 255, 255);
   margin: 20px;
   border-radius: 10px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.241) -2px -2px 8px 0px;
 }
 
 .para-me p {
@@ -336,6 +338,11 @@ html {
 .profile-me img {
   margin-left: 20px;
   border: 1px black solid;
+  transition: all ease 300ms;
+}
+
+.profile-me img:active {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 7px;
 }
 
 footer {
