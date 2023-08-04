@@ -320,7 +320,7 @@ html {
 .head2 h1::after {
     content: "";
     height: 2px;
-    width: 110px;
+    width: 80px;
     background-color: rgb(255, 255, 255);
     position: absolute;
     transform: translateY(20px) translateX(10px);
@@ -329,10 +329,10 @@ html {
 .head2 h1::before {
     content: "";
     height: 2px;
-    width: 110px;
+    width: 80px;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    transform: translateY(20px) translateX(-120px);
+    transform: translateY(20px) translateX(-90px);
 }
 
 .about-me {
@@ -478,12 +478,12 @@ footer {
 
     /* Hide horizontal overflow */
     main {
-       overflow-x: hidden;
+        overflow-x: hidden;
     }
 
     body {
         overflow-x: hidden;
-    
+
     }
 
     .head1 p {
@@ -518,16 +518,16 @@ footer {
         height: auto;
     }
 
-    .about-me img{
+    .about-me img {
         height: 150px;
     }
 
-    .slider-card{
+    .slider-card {
         min-width: 163px;
     }
 
 
-    .slider-buttons button{
+    .slider-buttons button {
         padding: 5px 19px;
     }
 }
